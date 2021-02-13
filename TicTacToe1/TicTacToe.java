@@ -19,7 +19,7 @@ public class TicTacToe {
         System.out.println("Welcome to my first TicTacToe game!");
         System.out.println("Make your move by saying the index coordinate 0--2" + "\nGood game, Have fun!");
         
-        int counter = 0;
+        int counter = 1;
         boolean running = true;
 
         String[][] tictactoe = new String[3][3];
@@ -41,55 +41,56 @@ public class TicTacToe {
             int coordinateY1 = entrada.nextInt();
 
             tictactoe[coordinateX1][coordinateY1] = "x";
-
-            if (tictactoe[0][0].equals("x") && tictactoe[0][1].equals("x") && tictactoe[0][2].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[0][0].equals("y") && tictactoe[0][1].equals("y") && tictactoe[0][2].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
-            } else if (tictactoe[1][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[1][2].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[1][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[1][2].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
-            } else if (tictactoe[2][0].equals("x") && tictactoe[2][1].equals("x") && tictactoe[2][2].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[2][0].equals("y") && tictactoe[2][1].equals("y") && tictactoe[2][2].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
-            } else if (tictactoe[0][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][2].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[0][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][2].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
-            } else if (tictactoe[0][2].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][0].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[0][2].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][0].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
-            } else if (tictactoe[0][0].equals("x") && tictactoe[1][0].equals("x") && tictactoe[2][0].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[0][0].equals("y") && tictactoe[1][0].equals("y") && tictactoe[2][0].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
-            } else if (tictactoe[0][1].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][1].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[0][1].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][1].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
-            } else if (tictactoe[0][2].equals("x") && tictactoe[1][2].equals("x") && tictactoe[2][2].equals("x")) {
-                System.out.println("Winner is player one");
-                break;
-            } else if (tictactoe[0][2].equals("y") && tictactoe[1][2].equals("y") && tictactoe[2][2].equals("y")) {
-                System.out.println("Winner is player two");
-                break;
+            if(counter >=2){
+                if (tictactoe[0][0].equals("x") && tictactoe[0][1].equals("x") && tictactoe[0][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[0][0].equals("y") && tictactoe[0][1].equals("y") && tictactoe[0][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                } else if (tictactoe[1][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[1][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[1][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[1][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                } else if (tictactoe[2][0].equals("x") && tictactoe[2][1].equals("x") && tictactoe[2][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[2][0].equals("y") && tictactoe[2][1].equals("y") && tictactoe[2][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                } else if (tictactoe[0][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[0][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                } else if (tictactoe[0][2].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][0].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[0][2].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][0].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                } else if (tictactoe[0][0].equals("x") && tictactoe[1][0].equals("x") && tictactoe[2][0].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[0][0].equals("y") && tictactoe[1][0].equals("y") && tictactoe[2][0].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                } else if (tictactoe[0][1].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][1].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[0][1].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][1].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                } else if (tictactoe[0][2].equals("x") && tictactoe[1][2].equals("x") && tictactoe[2][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    break;
+                } else if (tictactoe[0][2].equals("y") && tictactoe[1][2].equals("y") && tictactoe[2][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    break;
+                }
             }
 
             for (String[] game : tictactoe
@@ -114,57 +115,57 @@ public class TicTacToe {
             ) {
                 System.out.println(Arrays.toString(game));
             }
-
-            if (tictactoe[0][0].equals("x") && tictactoe[0][1].equals("x") && tictactoe[0][2].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[0][0].equals("y") && tictactoe[0][1].equals("y") && tictactoe[0][2].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
-            } else if (tictactoe[1][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[1][2].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[1][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[1][2].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
-            } else if (tictactoe[2][0].equals("x") && tictactoe[2][1].equals("x") && tictactoe[2][2].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[2][0].equals("y") && tictactoe[2][1].equals("y") && tictactoe[2][2].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
-            } else if (tictactoe[0][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][2].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[0][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][2].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
-            } else if (tictactoe[0][2].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][0].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[0][2].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][0].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
-            } else if (tictactoe[0][0].equals("x") && tictactoe[1][0].equals("x") && tictactoe[2][0].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[0][0].equals("y") && tictactoe[1][0].equals("y") && tictactoe[2][0].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
-            } else if (tictactoe[0][1].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][1].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[0][1].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][1].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
-            } else if (tictactoe[0][2].equals("x") && tictactoe[1][2].equals("x") && tictactoe[2][2].equals("x")) {
-                System.out.println("Winner is player one");
-                running = false;
-            } else if (tictactoe[0][2].equals("y") && tictactoe[1][2].equals("y") && tictactoe[2][2].equals("y")) {
-                System.out.println("Winner is player two");
-                running = false;
+            if (counter >=2){
+                if (tictactoe[0][0].equals("x") && tictactoe[0][1].equals("x") && tictactoe[0][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[0][0].equals("y") && tictactoe[0][1].equals("y") && tictactoe[0][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                } else if (tictactoe[1][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[1][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[1][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[1][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                } else if (tictactoe[2][0].equals("x") && tictactoe[2][1].equals("x") && tictactoe[2][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[2][0].equals("y") && tictactoe[2][1].equals("y") && tictactoe[2][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                } else if (tictactoe[0][0].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[0][0].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                } else if (tictactoe[0][2].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][0].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[0][2].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][0].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                } else if (tictactoe[0][0].equals("x") && tictactoe[1][0].equals("x") && tictactoe[2][0].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[0][0].equals("y") && tictactoe[1][0].equals("y") && tictactoe[2][0].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                } else if (tictactoe[0][1].equals("x") && tictactoe[1][1].equals("x") && tictactoe[2][1].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[0][1].equals("y") && tictactoe[1][1].equals("y") && tictactoe[2][1].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                } else if (tictactoe[0][2].equals("x") && tictactoe[1][2].equals("x") && tictactoe[2][2].equals("x")) {
+                    System.out.println("Winner is player one");
+                    running = false;
+                } else if (tictactoe[0][2].equals("y") && tictactoe[1][2].equals("y") && tictactoe[2][2].equals("y")) {
+                    System.out.println("Winner is player two");
+                    running = false;
+                }
             }
-            
             counter++;
 
         }

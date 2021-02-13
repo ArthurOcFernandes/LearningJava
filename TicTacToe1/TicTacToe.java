@@ -16,7 +16,7 @@ public class TicTacToe {
     // such as players 2 move's the same as player one's
 
     public static void main(String[] args) {
-        System.out.println("Welcome to TicTacToe1.TicTacToe game!");
+        System.out.println("Welcome to my first TicTacToe game!");
         System.out.println("Make your move by saying the index coordinate 0--2" + "\nGood game, Have fun!");
 
         boolean running = true;

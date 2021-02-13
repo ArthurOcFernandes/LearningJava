@@ -18,7 +18,8 @@ public class TicTacToe {
     public static void main(String[] args) {
         System.out.println("Welcome to my first TicTacToe game!");
         System.out.println("Make your move by saying the index coordinate 0--2" + "\nGood game, Have fun!");
-
+        
+        int counter = 0;
         boolean running = true;
 
         String[][] tictactoe = new String[3][3];
@@ -32,6 +33,7 @@ public class TicTacToe {
         Scanner entrada = new Scanner(System.in);
 
         while (running) {
+            
             System.out.println("Player one's turn (you get the 'x' symbol): ");
             System.out.print("Coordinate x ");
             int coordinateX1 = entrada.nextInt();
@@ -93,6 +95,11 @@ public class TicTacToe {
             for (String[] game : tictactoe
             ) {
                 System.out.println(Arrays.toString(game));
+            }
+            
+            if (counter = 5) {
+                System.out.println("Tie!");
+                break;
             }
 
             System.out.println("Player two's turn (you get the 'y' symbol): ");
@@ -157,6 +164,8 @@ public class TicTacToe {
                 System.out.println("Winner is player two");
                 running = false;
             }
+            
+            counter++ 
 
         }
 

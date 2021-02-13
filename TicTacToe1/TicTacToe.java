@@ -97,7 +97,7 @@ public class TicTacToe {
                 System.out.println(Arrays.toString(game));
             }
             
-            if (counter = 5) {
+            if (counter == 5) {
                 System.out.println("Tie!");
                 break;
             }
@@ -165,7 +165,7 @@ public class TicTacToe {
                 running = false;
             }
             
-            counter++ 
+            counter++;
 
         }
 
